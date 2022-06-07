@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 2.5fr 1fr;
+    grid-template-areas:
+        "nav header header header"
+        "nav primeraSeccion primeraSeccion aside"
+        "nav segundaSeccion segundaSeccion aside"
+        "nav form form aside"
+        "footer footer footer footer";
+    background-color: #303030;
+    color: white;
+}
+
+/* NAVEGACION */
+.nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(69, 109, 134);
+    background-image: linear-gradient(to right, rgb(255, 255, 255), #303030);
+}
+.nav ul{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+.nav li{
+    list-style: none;
+    padding: 20px;
+    height: 30px;
+}
+.nav li:hover{
+    background-color: #303030;
+}
+.nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.nav a:hover {
+    color: white;
+}
+.nav img {
+    width: 150px;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+
+/* HEADER */
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: #90bbd4;
+    color: rgb(0, 0, 0);
+    height: 10vh;
+    padding-top: 30px;
+    background-image: linear-gradient(rgb(255, 255, 255), #303030);
+}
+
+.header h1{
+    font-family: 'Arvo', serif;
+}
+
+.header p{
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/*PRIMERA SECCION*/
+
+.primeraSeccion {
+    grid-area: primeraSeccion;
+    /* Unidad relativa 16px = 1rem */
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.primeraSeccion p{
+    max-width: 550px;
+    text-align: center;
+    margin: 1rem;
+}
+.primeraSeccion button{
+    padding: .5rem;
+    margin: 1rem;
+}
+.primeraSeccion h2{
+    font-size: 2rem;
+}
+
+/*SEGUNDA SECCION*/
+
+.segundaSeccion {
+    grid-area: segundaSeccion;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}
+.segundaSeccion div{
+    display: flex;
+    margin: 3rem .5rem;
+}
+.segundaSeccion img{
+    max-width: 300px;
+    min-width: 50%;
+    margin-left: 2rem;
+}
+.segundaSeccion h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* FORM */
+.form {
+    grid-area: form;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h3{
+    font-size: 2rem;
+}
+.form div{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.form input{
+    height: 2.5rem;
+    width: 350px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #c6c6c6;
+}
+
+.form input[type=submit]:hover{
+    background-color: black;
+    color: white;
+}
+ 
+.aside {
+    grid-area: aside;
+    background-color: rgb(0, 183, 255);
+    background-image: linear-gradient(to left, rgb(255, 255, 255), #303030);
+    color: black;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black
+
+}
+.footer i{
+    font-size: 2rem;
+}
+
+@media (max-width: 768px){
+    .grilla{
+        grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "primeraSeccion primeraSeccion primeraSeccion primeraSeccion "
+        "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+        "form form form form"
+        "footer footer footer footer"
+        ;
+    }
+    .aside{
+        display: none;
+    }
+    .nav{
+        flex-direction: row;
+    }
+    .nav ul{
+        display: flex;
+        /* flex-direction: row; */
+    }
+
+}
+
+@media (max-width: 480px){
+    .segundaSeccion img{
+        display: none;
+    }
+    
+}
