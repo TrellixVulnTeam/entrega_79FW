@@ -39,6 +39,7 @@
 .nav li:hover{
     background-color: #303030;
     transform: scale(1.2);
+    transition: 1s;
 }
 .nav a{
     color: rgb(0, 0, 0);
@@ -95,6 +96,7 @@
 }
 .primeraSeccion button:hover {
     transform: scale(1.2);
+    transition: .5s;
 }
 .primeraSeccion h2{
     font-size: 2rem;
@@ -149,6 +151,7 @@
 .form input[type=submit]:hover{
     background-color: black;
     color: white;
+    transition: .5s;
 }
  
 .aside {
