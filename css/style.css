@@ -38,6 +38,7 @@
 }
 .nav li:hover{
     background-color: #303030;
+    transform: scale(1.2);
 }
 .nav a{
     color: rgb(0, 0, 0);
@@ -48,7 +49,7 @@
 }
 .nav img {
     width: 150px;
-    border-radius: 100px;
+    height: 100px;
     padding: 5px;
 }
 
@@ -91,6 +92,9 @@
 .primeraSeccion button{
     padding: .5rem;
     margin: 1rem;
+}
+.primeraSeccion button:hover {
+    transform: scale(1.2);
 }
 .primeraSeccion h2{
     font-size: 2rem;
