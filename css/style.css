@@ -20,31 +20,33 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "imagen1 ."
-        ". imagen2"
-        "imagen3 ."
-        ". video";
+        "imagen1 imagen2"
+        "imagen3 video";
 }
 
 .imagen1 {
     grid-area: imagen1;
+    padding: 20px 20px;
 }
 
 .imagen2 {
     grid-area: imagen2;
+    padding: 20px 20px;
 }
 
 .imagen3 {
     grid-area: imagen3;
+    padding: 20px 20px;
 }
 
 .video {
     grid-area: video;
+    padding: 20px 20px;
 }
 
 
