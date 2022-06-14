@@ -39,17 +39,23 @@
     padding: .5rem;
     margin: 1rem;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .primeraSeccion button {
     padding: .5rem;
     margin: 1rem;
+    background-color: #c6c6c6;
 }
 
 .primeraSeccion button:hover {
     transform: scale(1.2);
-    transition: .5s;
+    transition: 1s;
+    background-color: black;
+}
+
+.primeraSeccion a:hover {
+    color: white;
 }
 
 .primeraSeccion h2 {
