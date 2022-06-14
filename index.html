@@ -11,36 +11,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Mi estilo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Rayo's Studio</title>
 </head>
 
 <body class="body">
+
     <div class="grilla">
 
-        <!-- BARRA DE NAV -->
-        <nav class="nav">
-            <!-- Logo en escritorio -->
-            <img src="./imgEstudio/estudio2.jpg" alt="LOGO" class="logoDesktop">
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="galeria.html">GALERIA</a></li>
-                <li><a href="servicios.html">SERVICIOS</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">RESERVAS</a></li>
-            </ul>
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./imgEstudio/estudio2.jpg" alt="LOGO"
+                        class="logoDesktop"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="contacto.html" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contacto
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                                <li><a class="dropdown-item" href="contacto.html">Reservas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <!-- ENCABEZADO -->
-        <header class="header">
-            <h1>RAYO'S STUDIO</h1>
-            <p>Estudio de grabacion musical profesional</p>
-        </header>
-
-        <!-- MENU PRINCIPAL -->
+        <!-- SECCIONES -->
         <section class="primeraSeccion">
-            <h2>Un título descriptivo</h2>
+            <h2>RAYO'S STUDIO</h2>
+            <h4>Estudio de grabacion musical.</h4>
             <p>El estudio de grabación Rayo's Studio, nace como una opción innovadora para todos los artistas que desean
                 realizar sus proyectos musicales de manera profesional. Somos una empresa con compromiso social que
                 propicia espacios para el desarrollo del arte y la sana convivencia. Esto gracias a que contamos con un
@@ -52,8 +73,8 @@
                 adicionales como sonido, luces y música en vivo. Ofrecemos también servicios de diseño gráfico,
                 fotografía y producción audiovisual.</p>
             <div>
-                <button>MAS INFORMACION</button>
-                <button>SOLUCITAR TURNO</button>
+                <button> <a href="nosotros.html">MAS INFORMACION</a></button>
+                <button> <a href="contacto.html">SOLUCITAR TURNO</a></button>
             </div>
         </section>
 
@@ -98,6 +119,9 @@
         </footer>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

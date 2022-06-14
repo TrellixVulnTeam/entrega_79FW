@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Mi estilo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Rayo's Studio - Reservas</title>
 </head>
@@ -19,34 +20,50 @@
 <body>
     <div class="grilla">
 
-        <!-- BARRA DE NAV -->
-        <nav class="nav">
-            <!-- Logo en escritorio -->
-            <img src="./imgEstudio/estudio2.jpg" alt="LOGO" class="logoDesktop">
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="galeria.html">GALERIA</a></li>
-                <li><a href="servicios.html">SERVICIOS</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="contacto.html">RESERVAS</a></li>
-            </ul>
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./imgEstudio/estudio2.jpg" alt="LOGO"
+                        class="logoDesktop"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="contacto.html" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Contacto
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                                <li><a class="dropdown-item" href="contacto.html">Reservas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-        <!-- ENCABEZADO -->
-        <header class="header">
-            <h1>RAYO'S STUDIO</h1>
-            <p>Estudio de grabacion musical profesional</p>
-        </header>
 
 
         <!-- CONTENIDO PRINCIPAL -->
-        <section class="reservasSection">
+        <section class="serviciosSeccion">
             <h4>INSTRUMENTALES</h4>
             <p>Pedi tu instrumental, del genero que desees y moldeado a tu manera.</p>
-            <br>
             <h4>VOCES</h4>
             <p>Veni a grabar tu cancion con nosotros, poseemos equipos de alta calidad.</p>
-            <br>
             <h4>MEZCLA Y MASTERIZACION</h4>
             <p>Realizamos la mezcla y la masterizacion de tu cancion, para que esta compita en el mercado profesional.
             </p>
@@ -73,6 +90,9 @@
         </footer>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
