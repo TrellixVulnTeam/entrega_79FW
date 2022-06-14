@@ -41,6 +41,7 @@
     text-decoration: none;
     color: black;
 }
+
 .primeraSeccion button {
     padding: .5rem;
     margin: 1rem;
@@ -186,5 +187,9 @@ img {
 
     .column {
         flex: 100%;
+    }
+
+    .botones1 {
+        text-align: center;
     }
 }
