@@ -5,8 +5,7 @@
 }
 
 .grilla {
-    background-color: #f7c2c2;
-    color: rgb(0, 0, 0);
+    @include grillaStyle();
 }
 
 @import 'nav';
@@ -15,58 +14,6 @@
 @import 'footer';
 @import 'formulario';
 
-
-//     .logoDesktop {
-//         width: 100px;
-//         height: 50px;
-//         margin-right: 80px;
-//     }
-
-//     .primeraSeccion {
-
-//        p{ @extend %estilosParrafo;
-//        }
-//     }
-
-// }
-
-// PRIMERA SECCION
-
-// .primeraSeccion {
-//     grid-area: primeraSeccion;
-//     /* Unidad relativa 16px = 1rem */
-//     margin-top: 3rem;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
-
-// .primeraSeccion a {
-//     padding: .5rem;
-//     margin: 1rem;
-//     text-decoration: none;
-//     color: rgb(0, 0, 0);
-// }
-
-// .primeraSeccion button {
-//     padding: .5rem;
-//     margin: 1rem;
-//     background-color: #c6c6c6;
-// }
-
-// .primeraSeccion button:hover {
-//     transform: scale(1.2);
-//     transition: 1s;
-//     background-color: black;
-// }
-
-// .primeraSeccion a:hover {
-//     color: white;
-// }
-
-// .primeraSeccion h2 {
-//     font-size: 2rem;
-// }
 
 // EXTEND
 
@@ -83,81 +30,6 @@
     color: rgb(0, 0, 0);
 }
 
-
-// /*SEGUNDA SECCION*/
-
-// .segundaSeccion {
-//     grid-area: segundaSeccion;
-//     display: flex;
-//     flex-direction: column;
-//     margin: 3rem;
-// }
-
-// .segundaSeccion div {
-//     display: flex;
-//     margin: 3rem .5rem;
-// }
-
-// .segundaSeccion img {
-//     max-width: 300px;
-//     min-width: 50%;
-//     margin-left: 2rem;
-// }
-
-// .segundaSeccion h3 {
-//     text-align: center;
-//     font-size: 1.5rem;
-// }
-
-/* FORM */
-// .form {
-//     grid-area: form;
-//     min-height: 25vh;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     margin: 100px;
-// }
-
-// .form h3 {
-//     font-size: 2rem;
-// }
-
-// .form div {
-//     margin: 2rem;
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .form input {
-//     height: 2.5rem;
-//     width: 350px;
-//     text-align: center;
-//     border-radius: 15px;
-//     background-color: #c6c6c6;
-// }
-
-// .form input[type=submit]:hover {
-//     background-color: black;
-//     color: white;
-//     transition: .5s;
-// }
-
-// .aside {
-//     grid-area: aside;
-//     background-color: rgb(252, 252, 252);
-//     color: black;
-// }
-
-// .footer {
-//     grid-area: footer;
-//     background-color: black;
-//     color: white;
-// }
-
-// .footer i {
-//     font-size: 2rem;
-// }
 
 /* GALERIA */
 
